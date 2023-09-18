@@ -604,18 +604,6 @@ video {
   resize: both;
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#fffff\] {
-  background-color: #fffff;
-}
-
-.bg-\[\#ffff\] {
-  background-color: #ffff;
-}
-
 .bg-hero-pattern {
   background-image: url('/src/assets/images/Deep_Space_72_Without_A_Logo.webp');
 }
