@@ -2,9 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    container: {
+      center: true,
+      padding: '6rem',
+    },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/images/Deep_Space_72_Without_A_Logo.webp')",
+        'hero-pattern': "url('../images/bg-body.webp')",
 
       }
     },
