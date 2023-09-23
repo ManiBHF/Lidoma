@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('../images/bg-body.webp')",
+        'hero-mobile': "url('../images/Rectangle 713.png')",
 
       }
     },

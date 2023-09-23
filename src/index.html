@@ -11,29 +11,27 @@
     <title>Document</title>
   </head>
   <body
-    class="bg-hero-pattern  bg-no-repeat bg-center bg-clip-border bg-origin-border"
+    class="bg-hero-pattern bg-no-repeat bg-center bg-clip-border bg-origin-border"
   >
     <!-- silder -->
 
-    <div class="container">
-      <div class="swiper mySwiper mt-16">
+    <div class="lg:container">
+      <div class="swiper mySwiper mt-16 max-md:hidden">
+        <nav
+          class="flex w-[1180px] px my-0 mx-auto bg-white justify-between h-12 items-center mt-5 rounded-3xl relative top-16"
+        >
+          <div class="text-black flex font-medium text-sm pl-4">
+            <a href="#">CONTACT</a>
+          </div>
+          <div class="text-black flex font-medium text-sm pr-4">
+            <a class="mr-20" href="#"> PUBG PC</a>
+            <a class="mr-20" href="#">FF 4v4</a>
+            <a href="#">CASE STUDY</a>
+          </div>
+        </nav>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="h-[620px] bg-white bg-opacity-10 rounded-[45px]">
-              <div class="pt-1">
-                <nav
-                  class="flex w-[1180px] px my-0 mx-auto bg-white justify-between h-12 items-center mt-5 rounded-3xl"
-                >
-                  <div class="text-black flex font-medium text-sm pl-4">
-                    <a href="#">CONTACT</a>
-                  </div>
-                  <div class="text-black flex font-medium text-sm pr-4">
-                    <a class="mr-20" href="#"> PUBG PC</a>
-                    <a class="mr-20" href="#">FF 4v4</a>
-                    <a href="#">CASE STUDY</a>
-                  </div>
-                </nav>
-              </div>
+            <div class="h-[620px] bg-white bg-opacity-10 rounded-[45px] pt-10">
               <div class="flex flex-col items-center">
                 <img
                   src="./assets/images/3_white-_3_-1.webp"
@@ -70,21 +68,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="h-[620px] bg-white bg-opacity-10 rounded-[45px]">
-              <div class="pt-1">
-                <nav
-                  class="flex w-[1180px] px my-0 mx-auto bg-white justify-between h-12 items-center mt-5 rounded-3xl"
-                >
-                  <div class="text-black flex font-medium text-sm pl-4">
-                    <a href="#">CONTACT</a>
-                  </div>
-                  <div class="text-black flex font-medium text-sm pr-4">
-                    <a class="mr-20" href="#"> PUBG PC</a>
-                    <a class="mr-20" href="#">FF 4v4</a>
-                    <a href="#">CASE STUDY</a>
-                  </div>
-                </nav>
-              </div>
+            <div class="h-[620px] bg-white bg-opacity-10 rounded-[45px] pt-10">
               <div class="flex flex-col items-center">
                 <img
                   src="./assets/images/3_white-_3_-1.webp"
@@ -121,21 +105,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="h-[620px] bg-white bg-opacity-10 rounded-[45px]">
-              <div class="pt-1">
-                <nav
-                  class="flex w-[1180px] px my-0 mx-auto bg-white justify-between h-12 items-center mt-5 rounded-3xl"
-                >
-                  <div class="text-black flex font-medium text-sm pl-4">
-                    <a href="#">CONTACT</a>
-                  </div>
-                  <div class="text-black flex font-medium text-sm pr-4">
-                    <a class="mr-20" href="#"> PUBG PC</a>
-                    <a class="mr-20" href="#">FF 4v4</a>
-                    <a href="#">CASE STUDY</a>
-                  </div>
-                </nav>
-              </div>
+            <div class="h-[620px] bg-white bg-opacity-10 rounded-[45px] pt-10">
               <div class="flex flex-col items-center">
                 <img
                   src="./assets/images/3_white-_3_-1.webp"
@@ -177,11 +147,29 @@
         <div class="swiper-pagination"></div>
       </div>
       <div class="swiper-pagination"></div>
+      <!-- MONILE RESPONSIVE-->
+      <div class="lg:hidden relative">
+        <img src="./assets/images/Rectangle 713.png" alt="" />
+        <div class="mx-14 absolute top-[180px]">
+          <img src="./assets/images/3_white-_3_-1.webp" class="mb-9" />
+          <p class="text-white text-center mb-10">
+            Lidoma Vision Esports, a UAE-based International Gaming & Esports
+            Solutions Company established in 2020, aims to empower the global
+            gaming community & ecosystem. Our passionate team of gaming
+            enthusiasts leads us on an exciting journey in the worldwide gaming
+            landscape. At Lidoma, we Inspire the World to Play, Earn, and Enjoy.
+            We unite communities, orchestrate tournaments & leagues, and
+            broadcast online/offline events to create a robust platform that
+            offers extensive services to our partners & community.
+          </p>
+          <img src="./assets/images/Group 692.png" />
+        </div>
+      </div>
 
       <!-- -----------SOCIAL MEDIA------------ -->
       <!-- LINE SECTION -->
-      <div class="mt-28">
-        <div class="flex items-center">
+      <div class="mt-28 max-md:hidden">
+        <div class="flex items-center max-md:hidden">
           <img src="./assets/images/Line 162.png" width="460px" height="6px" />
           <p class="text-white font-bold text-[32px] px-[15px]">
             SOCIAL MEDIAS
@@ -279,9 +267,148 @@
           </div>
         </div>
       </div>
+      <!-- MOBILE RESPONSIVE -->
+      <div class="lg:hidden mt-16">
+        <img src="./assets/images/Group 885.png" />
+        <div>
+          <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper mt-16">
+              <div class="swiper-slide flex flex-col items-center ">
+                <img src="./assets/images/LIDOMA TURKYIE.png" class="mb-9" />
+                <div
+                  class="bg-[#A90000] w-[342px] h-[210px] bg-opacity-50 border-4 divide-solid border-[#A90000] rounded-[22px] flex flex-col pt-3"
+                >
+                  <div class="flex">
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-yt.svg"
+                        alt="YouTube"
+                        class="pr-7 pl-3"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector.svg"
+                        alt="TikTok"
+                        class="pr-7"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-inst.svg"
+                        alt="Instagram"
+                        class="pr-3"
+                    /></a>
+                  </div>
+                  <div class="flex pt-6">
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-ld.svg"
+                        alt="Linkdin"
+                        class="pr-7 pl-3"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-twitch.svg"
+                        alt="Twitch"
+                        class="pr-7"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex flex-col items-center ">
+                <img src="./assets/images/LIDOMA TURKYIE.png" class="mb-9" />
+                <div
+                  class="bg-[#EAEF00] w-[342px] h-[210px] bg-opacity-50 border-4 divide-solid border-[#EAEF00] rounded-[22px] flex flex-col pt-3"
+                >
+                  <div class="flex">
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-yt.svg"
+                        alt="YouTube"
+                        class="pr-7 pl-3"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector.svg"
+                        alt="TikTok"
+                        class="pr-7"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-inst.svg"
+                        alt="Instagram"
+                        class="pr-3"
+                    /></a>
+                  </div>
+                  <div class="flex pt-6">
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-ld.svg"
+                        alt="Linkdin"
+                        class="pr-7 pl-3"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-twitch.svg"
+                        alt="Twitch"
+                        class="pr-7"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex flex-col items-center ">
+                <img src="./assets/images/LIDOMA TURKYIE.png" class="mb-9" />
+                <div
+                  class="bg-[#73F038] w-[342px] h-[210px] bg-opacity-50 border-4 divide-solid border-[#73F038] rounded-[22px] flex flex-col pt-3"
+                >
+                  <div class="flex">
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-yt.svg"
+                        alt="YouTube"
+                        class="pr-7 pl-3"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector.svg"
+                        alt="TikTok"
+                        class="pr-7"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-inst.svg"
+                        alt="Instagram"
+                        class="pr-3"
+                    /></a>
+                  </div>
+                  <div class="flex pt-6">
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-ld.svg"
+                        alt="Linkdin"
+                        class="pr-7 pl-3"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/Vector-twitch.svg"
+                        alt="Twitch"
+                        class="pr-7"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-button-next text-white -mt-[146px] mr-[18px]"
+            ></div>
+            <div
+              class="swiper-button-prev text-white -mt-[146px] ml-[18px]"
+            ></div>
+          </div>
+        </div>
+      </div>
       <!-- TOURNAMENTS -->
-      <div class="mt-28">
-        <div class="flex items-center">
+      <div class="mt-28 max-md:hidden">
+        <div class="flex items-center max-md:hidden">
           <img src="./assets/images/Line 162.png" width="475px" height="6px" />
           <p class="text-white font-bold text-[32px] px-[15px]">TOURNAMENTS</p>
           <img src="./assets/images/Line 163.png" width="480px" height="6px" />
@@ -291,11 +418,24 @@
           <img src="./assets/images/Group 763.png" class="mt-12" />
         </div>
       </div>
+      <!-- MOBILE RESPONSIVE -->
+      <div class="lg:hidden mt-16">
+        <img src="./assets/images/Group 886.png" alt="" />
+        <div class="mx-3 mt-16">
+          <img src="./assets/images/Group 892.png" class="mb-7">
+          <img src="./assets/images/Group 892.png">
+        </div>
+      </div>
       <!-- TRUSTED BY -->
-      <div class="flex items-center mt-28" >
-        <img src="./assets/images/Line 162.png" width="487px" height="6px" />
-        <p class="text-white font-bold text-[32px] px-[15px]">TRUSTED BY</p>
-        <img src="./assets/images/Line 163.png" width="480px" height="6px" />
+      <div>
+        <div class="flex items-center mt-28 max-md:hidden">
+          <img src="./assets/images/Line 162.png" width="487px" height="6px" />
+          <p class="text-white font-bold text-[32px] px-[15px]">TRUSTED BY</p>
+          <img src="./assets/images/Line 163.png" width="480px" height="6px" />
+        </div>
+
+        <!-- MOBILE RESPONSIVE -->
+        <img src="./assets/images/Group 894.png" alt="" class="mt-16 mb-16 lg:hidden">
       </div>
       <!-- FOOTER -->
       <footer
@@ -332,45 +472,40 @@
                 class="text-white border-r-[3px] solid border-white px-3"
                 >COOKIE POLICY</a
               >
-              <a
-                href="#"
-                class="text-white  px-4"
-                >COOKIE SETINGS</a
-              >
+              <a href="#" class="text-white px-4">COOKIE SETINGS</a>
             </div>
             <div class="pt-5">
-              <p class="font-bold text-white">@2023 LIDOMA. All rights reserved</p>
+              <p class="font-bold text-white">
+                @2023 LIDOMA. All rights reserved
+              </p>
             </div>
-            <div class="h-[1px] w-[1180px] bg-white mt-2"></div>
+            <div
+              class="h-[1px] max-lg:w-[1180px] max-md:w-[350px] bg-white mt-2"
+            ></div>
             <div class="text-xs pt-6">
               <a
-              href="#"
-              class="text-white border-r-[3px] solid border-white pr-3"
-              >ABOUT</a
-            >
-            <a
-              href="#"
-              class="text-white border-r-[3px] solid border-white px-3"
-              >LEGAL</a
-            >
-            <a
-              href="#"
-              class="text-white border-r-[3px] solid border-white px-3"
-              >TERMS</a
-            >
-            <a
-              href="#"
-              class="text-white border-r-[3px] solid border-white px-3"
-              >COOKIE POLICY</a
-            >
-            <a
-              href="#"
-              class="text-white  px-4"
-              >COOKIE SETINGS</a
-            >
+                href="#"
+                class="text-white border-r-[3px] solid border-white pr-3"
+                >ABOUT</a
+              >
+              <a
+                href="#"
+                class="text-white border-r-[3px] solid border-white px-3"
+                >LEGAL</a
+              >
+              <a
+                href="#"
+                class="text-white border-r-[3px] solid border-white px-3"
+                >TERMS</a
+              >
+              <a
+                href="#"
+                class="text-white border-r-[3px] solid border-white px-3"
+                >COOKIE POLICY</a
+              >
+              <a href="#" class="text-white px-4">COOKIE SETINGS</a>
             </div>
           </div>
-
         </div>
       </footer>
     </div>
@@ -384,6 +519,14 @@
         },
         pagination: {
           el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper-2", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
