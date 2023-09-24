@@ -1,9 +1,19 @@
 @tailwind base;
+.tab-content div {
+  display: none;
+}
+
+.tab-content .active {
+  display: flex;
+}
+
+.swiper-pagination {
+  bottom: calc(100% - 47rem) !important;
+  z-index: 9999;
+}
+.swiper-pagination-bullet{
+  width: 18px;
+  height: 18px;
+}
 @tailwind components;
 @tailwind utilities;
-.tab-content div {
-    display: none;
-  }
-  .tab-content .active {
-    display: flex;
-  }
