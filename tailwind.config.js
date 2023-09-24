@@ -4,13 +4,17 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '9rem',
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1603px',
     },
     extend: {
       backgroundImage: {
         'hero-pattern': "url('../images/bg-body.webp')",
-        'hero-mobile': "url('../images/Rectangle 713.png')",
-
       }
     },
   },
