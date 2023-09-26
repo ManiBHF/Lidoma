@@ -13,3 +13,12 @@ tabs.forEach((tab, index) => {
     tabs[index].classList.add("active");
   });
 });
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "flex";
+  document.getElementById("mySidebar").style.flexDirection = "column";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}

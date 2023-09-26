@@ -348,8 +348,24 @@
     </section>
           <!-- MOBILE RESPONSIVE-->
           <div class="lg:hidden relative">
-            <img src="./assets/images/Rectangle 713.png" alt="" />
+                                    <!-- SIDEBAR -->
+                                   <div class="flex flex-col">
+                                      <div class="w3-sidebar w3-bar-block w3-border-right h-full w-[180px] bg-white fixed z-10 overflow-auto" style="display:none" id="mySidebar">
+                                        <button onclick="w3_close()" class="w3-bar-item w3-large inline-block overflow-hidden align-middle text-center">Close &times;</button>
+                                        <a href="#" class="w3-bar-item w3-button text-black">Link 1</a>
+                                        <a href="#" class="w3-bar-item w3-button text-black">Link 2</a>
+                                        <a href="#" class="w3-bar-item w3-button text-black flex-c">Link 3</a>
+                                      </div>
+                                    </div>
+                                    <div class="w3-teal">
+                                      <button class="w3-button w3-teal w3-xlarge text-white text-5xl" onclick="w3_open()">☰</button>
+                                    
+                                    </div>
+                                  </div>
+            <img src="./assets/images/Rectangle 713.png" alt="" class="-mt-12"/>
+
             <div class="mx-14 absolute top-[180px]">
+              
               <img src="./assets/images/3_white-_3_-1.webp" class="mb-9" />
               <p class="text-white text-center mb-10">
                 Lidoma Vision Esports, a UAE-based International Gaming & Esports
@@ -363,7 +379,6 @@
               </p>
               <img src="./assets/images/Group 692.png" />
             </div>
-          </div>
 
     <div class="container">
       <!-- -----------SOCIAL MEDIA------------ -->
@@ -612,6 +627,9 @@
         <div class="bg-gradient-to-b from-cyan-800 rounded-t-3xl to-slate-900 h-full absolute inset-0 opacity-50"></div>
       </footer>
     </div>
+
+    
+
     <script src="./assets/js/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
     <script src="./assets/js/raw.js"></script>
     <script>
