@@ -806,6 +806,22 @@ video {
   width: 95%;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
+.min-w-\[50\%\] {
+  min-width: 50%;
+}
+
+.min-w-\[391px\] {
+  min-width: 391px;
+}
+
+.max-w-\[391px\] {
+  max-width: 391px;
+}
+
 .-translate-x-full {
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
