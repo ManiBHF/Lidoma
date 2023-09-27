@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('../images/bg-body.webp')",
+        'hero-pattern-m': "url('../images/bg-s-slider.webp')",
       }
     },
   },
