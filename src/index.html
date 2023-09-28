@@ -8,8 +8,160 @@
     <title>Document</title>
   </head>
   <body class="bg-hero-pattern bg-center bg-origin-border">
+        <!-- mobile -->
+        <section class="relative sm:hidden flex flex-col z-20 mx-auto h-[862px] justify-center" x-data="{open: false}">
+          <nav
+          class="absolute inset-0 z-50 transform lg:transform-none lg:opacity-100 duration-200 lg:relative text-white h-[630px] w-[391px] bg-black translate-x-0 mr-4 rounded-br-[50px]"
+          :class="{'translate-x-0 ease-in opacity-100':open === true, '-translate-x-full ease-out opacity-0': open === false}"
+        >
+              <button class="absolute top-8 right-6" @click="open = false">
+                <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26 21H19.2621L12.7906 13.0568L6.31918 21H0L9.23133 10.1696L0.590044 0H7.09956L13.0952 7.5554L18.9766 0H25.3338L16.5974 10.4138L26 21Z" fill="white" fill-opacity="0.8"/>
+                  </svg>              
+                </svg>
+              </button>
+          <ul class="mt-20">
+            <li class="flex flex-col gap-[72px]">
+              <a href="#" class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"><span><svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.87496 15.4249L15.1749 1.25C16.4281 1.25 17.6299 1.74781 18.516 2.63391C19.4021 3.52002 19.8999 4.72183 19.8999 5.97497V12.2749H28.8143C29.2709 12.2698 29.7232 12.3639 30.1398 12.5509C30.5564 12.7379 30.9274 13.0132 31.227 13.3578C31.5266 13.7023 31.7478 14.1079 31.8751 14.5465C32.0024 14.985 32.0329 15.446 31.9643 15.8974L29.7908 30.0723C29.6769 30.8235 29.2954 31.5081 28.7165 32.0001C28.1377 32.4922 27.4005 32.7584 26.6409 32.7498H8.87496M8.87496 15.4249V32.7498M8.87496 15.4249H4.14998C3.31456 15.4249 2.51334 15.7568 1.92261 16.3475C1.33187 16.9383 1 17.7395 1 18.5749V29.5998C1 30.4353 1.33187 31.2365 1.92261 31.8272C2.51334 32.418 3.31456 32.7498 4.14998 32.7498H8.87496" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>SOCIAL MEDIAS</a>
+              <a href="#" class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"><span><svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H11C12.7681 1 14.4638 1.70238 15.714 2.95262C16.9643 4.20286 17.6667 5.89856 17.6667 7.66667V31C17.6667 29.6739 17.1399 28.4021 16.2022 27.4645C15.2645 26.5268 13.9927 26 12.6667 26H1V1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M34.3332 1H24.3332C22.5651 1 20.8694 1.70238 19.6191 2.95262C18.3689 4.20286 17.6665 5.89856 17.6665 7.66667V31C17.6665 29.6739 18.1933 28.4021 19.131 27.4645C20.0687 26.5268 21.3404 26 22.6665 26H34.3332V1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>TOURNAMENTS</a>
+              <a href="#" class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"><span><svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 29C1 27.9391 1.42143 26.9217 2.17157 26.1716C2.92172 25.4214 3.93913 25 5 25H26.6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 1H26.6V33H5C3.93913 33 2.92172 32.5786 2.17157 31.8284C1.42143 31.0783 1 30.0609 1 29V5C1 3.93913 1.42143 2.92172 2.17157 2.17157C2.92172 1.42143 3.93913 1 5 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>CASE STUDY</a>
+              <a href="#" class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"><span><svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.6665 13.8872L15.4998 18.7205L31.6109 2.60938" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M30 15.5V26.7778C30 27.6324 29.6605 28.4519 29.0562 29.0562C28.4519 29.6605 27.6324 30 26.7778 30H4.22222C3.36764 30 2.54805 29.6605 1.94377 29.0562C1.33948 28.4519 1 27.6324 1 26.7778V4.22222C1 3.36764 1.33948 2.54805 1.94377 1.94377C2.54805 1.33948 3.36764 1 4.22222 1H21.9444" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>GAMING TOURNAMENT REGISTRATION FORM</a>
+              <a href="#" class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"><span><svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.2803 11.1526C11.6212 10.1835 12.294 9.36634 13.1797 8.84583C14.0654 8.32531 15.1067 8.13504 16.1192 8.30872C17.1317 8.48239 18.0501 9.00879 18.7116 9.7947C19.3732 10.5806 19.7353 11.5753 19.7338 12.6026C19.7338 15.5026 15.3838 16.9526 15.3838 16.9526" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.5 22.75H15.5145" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>FAQ</a>
+            </li>
+          </ul>
+        </nav>
+          <div class="fixed inset-0 w-full h-full bg-gray-900/70 backdrop-blur-sm z-20" @click.prevent="open = false" x-show="open" x-cloak></div>
+          <button class="navbar-burger absolute top-4 left-4 z-20" @click="open = true">
+            <svg width="41" height="34" viewBox="0 0 41 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M38.9033 11.8398H2.41602" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M38.9033 2H2.41602" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M38.9033 21.6797H2.41602" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M38.9033 31.5195H2.41602" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="z-10 flex flex-col gap-11">
+            <img class="w-[388px] mx-auto" src="./assets/images/3_white-_3_-1.webp" alt="" />
+            <p class="text-white text-center px-11">
+              Lidoma Vision Esports, a UAE-based International Gaming & Esports Solutions Company established in 2020, aims to empower the global gaming
+              community & ecosystem. Our passionate team of gaming enthusiasts leads us on an exciting journey in the worldwide gaming landscape. At
+              Lidoma, we Inspire the World to Play, Earn, and Enjoy. We unite communities, orchestrate tournaments & leagues, and broadcast online/offline
+              events to create a robust platform that offers extensive services to our partners & community.
+            </p>
+          </div>
+          <div class="absolute w-full flex justify-center bottom-0 z-10">
+            <svg width="333" height="169" viewBox="0 0 333 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.2128 164.728C17.4678 164.728 14.4159 161.69 14.5846 157.949C15.3795 140.317 19.2706 122.944 26.0973 106.63C33.7974 88.2281 45.0787 71.5408 59.2853 57.5379C73.4919 43.5349 90.3403 32.4958 108.851 25.0621C127.362 17.6285 147.166 13.9488 167.111 14.2368C187.057 14.5248 206.746 18.7748 225.035 26.7398C243.323 34.7048 259.846 46.2259 273.642 60.6332C287.439 75.0405 298.233 92.0466 305.399 110.663C311.752 127.167 315.14 144.645 315.425 162.293C315.486 166.037 312.347 168.986 308.604 168.877C304.86 168.769 301.931 165.646 301.854 161.901C301.527 146.052 298.449 130.361 292.742 115.535C286.222 98.5958 276.4 83.1221 263.847 70.013C251.294 56.9039 236.26 46.421 219.62 39.1738C202.979 31.9265 185.064 28.0594 166.916 27.7973C148.767 27.5353 130.748 30.8835 113.905 37.6472C97.0623 44.411 81.732 54.4555 68.8055 67.1966C55.8791 79.9378 45.6144 95.1214 38.6081 111.865C32.4753 126.521 28.9463 142.116 28.1617 157.949C27.9763 161.69 24.9579 164.728 21.2128 164.728Z"
+                fill="#292929"
+              />
+              <path
+                d="M1.75463 166.294C0.735943 166.245 -0.0523364 165.38 0.00271716 164.362C2.39213 120.162 20.7689 78.545 51.4337 47.9979C82.5244 17.0265 123.842 -0.169695 166.756 0.00126257C209.671 0.17222 250.862 17.6971 281.727 48.9154C312.169 79.7056 330.242 121.467 332.311 165.684C332.359 166.703 331.563 167.563 330.544 167.604C329.519 167.645 328.657 166.844 328.609 165.82C326.574 122.607 308.905 81.7968 279.154 51.7045C248.976 21.1813 208.701 4.04649 166.742 3.87934C124.783 3.71218 84.3855 20.5256 53.9868 50.8075C24.0178 80.6616 6.05268 121.33 3.70383 164.524C3.64813 165.549 2.77941 166.343 1.75463 166.294Z"
+                fill="#292929"
+              />
+              <path
+                d="M21.2514 168.058C17.5074 168.144 14.3859 165.178 14.4678 161.434C15.1735 129.165 26.2412 97.908 46.1288 72.3344C67.4067 44.9729 97.4764 25.7942 131.259 18.0378C165.041 10.2815 200.465 14.423 231.547 29.7627C260.598 44.1001 284.192 67.3989 298.902 96.1283C300.609 99.4618 299.094 103.493 295.687 105.048C292.28 106.603 288.273 105.092 286.551 101.766C273.148 75.8752 251.795 54.8792 225.545 41.9242C197.264 27.9668 165.032 24.1985 134.293 31.2559C103.555 38.3133 76.1952 55.7639 56.8346 80.6598C38.8647 103.768 28.8088 131.975 28.0413 161.12C27.9427 164.863 24.9954 167.971 21.2514 168.058Z"
+                fill="#FFF500"
+                fill-opacity="0.25"
+              />
+              <path
+                d="M21.2514 168.058C17.5074 168.144 14.3859 165.178 14.4678 161.434C14.9856 137.77 21.0792 114.528 32.2933 93.6115C44.5769 70.7002 62.5856 51.3612 84.5649 37.4786C106.544 23.5959 131.745 15.6431 157.711 14.3947C181.417 13.2551 205.023 17.7387 226.613 27.4381C230.029 28.9727 231.367 33.0658 229.68 36.4094C227.993 39.7529 223.921 41.0794 220.498 39.56C201.004 30.907 179.728 26.9139 158.362 27.941C134.736 29.0769 111.806 36.3131 91.8072 48.9448C71.8085 61.5765 55.4225 79.1729 44.2458 100.02C34.1387 118.871 28.603 139.799 28.0413 161.12C27.9427 164.863 24.9954 167.971 21.2514 168.058Z"
+                fill="#FFF500"
+                fill-opacity="0.35"
+              />
+              <path
+                d="M21.2514 168.058C17.5074 168.144 14.3859 165.178 14.4678 161.434C15.1505 130.221 25.5292 99.9276 44.2499 74.8026C62.9706 49.6775 89.0293 31.0678 118.743 21.4857C122.308 20.3363 126.043 22.4788 127.031 26.0913C128.018 29.7037 125.884 33.4166 122.325 34.5819C95.5295 43.3549 72.0366 60.2085 55.125 82.9056C38.2134 105.603 28.7836 132.935 28.0413 161.12C27.9427 164.863 24.9954 167.971 21.2514 168.058Z"
+                fill="#FFF500"
+                fill-opacity="0.55"
+              />
+              <path
+                d="M21.2514 168.058C17.5074 168.144 14.3859 165.178 14.4678 161.434C15.1533 130.083 25.6182 99.7223 44.3953 74.6076C46.6378 71.6082 50.924 71.1953 53.8194 73.5706C56.7148 75.9458 57.1214 80.2093 54.8923 83.2187C38.1578 105.811 28.7813 133.014 28.0413 161.12C27.9427 164.863 24.9954 167.971 21.2514 168.058Z"
+                fill="#FFF500"
+              />
+              <path
+                d="M36.7775 168.52C34.9085 168.52 33.3887 167.004 33.4368 165.136C33.8517 149.015 37.2278 133.097 43.4066 118.18C50.0173 102.22 59.7069 87.7186 71.922 75.5035C84.137 63.2884 98.6385 53.5988 114.598 46.9881C130.558 40.3773 147.664 36.9748 164.938 36.9748C182.213 36.9748 199.319 40.3773 215.278 46.9881C231.238 53.5989 245.74 63.2884 257.955 75.5035C270.17 87.7186 279.859 102.22 286.47 118.18C292.649 133.097 296.025 149.015 296.44 165.136C296.488 167.004 294.968 168.52 293.099 168.52C291.23 168.52 289.72 167.004 289.669 165.136C289.256 149.904 286.056 134.866 280.217 120.77C273.946 105.631 264.755 91.8761 253.169 80.2895C241.582 68.7029 227.827 59.5119 212.688 53.2413C197.55 46.9707 181.324 43.7433 164.938 43.7433C148.552 43.7433 132.327 46.9707 117.188 53.2413C102.05 59.5119 88.2945 68.7029 76.708 80.2895C65.1214 91.8761 55.9304 105.631 49.6598 120.77C43.8212 134.866 40.6209 149.904 40.2076 165.136C40.1569 167.004 38.6466 168.52 36.7775 168.52Z"
+                fill="#D9D9D9"
+              />
+              <path
+                d="M143.195 104.843C143.195 111.564 141.784 116.582 138.962 119.897C136.14 123.211 131.869 124.868 126.147 124.868C124.132 124.868 122.604 124.759 121.566 124.541V118.753C122.868 119.08 124.233 119.243 125.659 119.243C128.062 119.243 130.039 118.893 131.59 118.193C133.14 117.477 134.326 116.365 135.148 114.855C135.97 113.33 136.443 111.238 136.567 108.577H136.288C135.388 110.04 134.35 111.067 133.171 111.658C131.993 112.249 130.52 112.545 128.752 112.545C125.791 112.545 123.457 111.596 121.752 109.697C120.046 107.784 119.193 105.131 119.193 101.739C119.193 98.0822 120.224 95.196 122.287 93.0799C124.364 90.9482 127.186 89.8824 130.752 89.8824C133.264 89.8824 135.458 90.4737 137.334 91.6562C139.226 92.8387 140.676 94.558 141.684 96.8141C142.691 99.0547 143.195 101.731 143.195 104.843ZM130.892 95.6705C129.403 95.6705 128.241 96.184 127.403 97.2109C126.566 98.2378 126.147 99.716 126.147 101.645C126.147 103.295 126.527 104.602 127.287 105.566C128.047 106.531 129.202 107.013 130.752 107.013C132.21 107.013 133.458 106.539 134.497 105.59C135.536 104.625 136.055 103.52 136.055 102.275C136.055 100.424 135.567 98.8602 134.59 97.5843C133.629 96.3085 132.396 95.6705 130.892 95.6705Z"
+                fill="white"
+              />
+              <path
+                d="M171.314 117.329H167.22V124.401H160.197V117.329H145.684V112.311L160.592 90.2792H167.22V111.728H171.314V117.329ZM160.197 111.728V105.94C160.197 104.975 160.235 103.575 160.313 101.739C160.39 99.9027 160.453 98.8369 160.499 98.5412H160.313C159.739 99.8171 159.049 101.062 158.243 102.275L152.01 111.728H160.197Z"
+                fill="white"
+              />
+              <path
+                d="M179.408 100.502C179.408 102.478 179.578 103.956 179.919 104.936C180.276 105.901 180.842 106.383 181.617 106.383C183.105 106.383 183.85 104.423 183.85 100.502C183.85 96.6119 183.105 94.6669 181.617 94.6669C180.842 94.6669 180.276 95.1493 179.919 96.114C179.578 97.0631 179.408 98.5257 179.408 100.502ZM189.711 100.455C189.711 104.034 189.021 106.725 187.641 108.53C186.261 110.32 184.237 111.214 181.57 111.214C179.012 111.214 177.035 110.296 175.64 108.46C174.244 106.609 173.547 103.94 173.547 100.455C173.547 93.3444 176.221 89.7891 181.57 89.7891C184.191 89.7891 186.199 90.7148 187.594 92.5664C189.005 94.4024 189.711 97.032 189.711 100.455ZM205.712 90.2792L186.85 124.401H181.268L200.13 90.2792H205.712ZM203.223 114.132C203.223 116.108 203.394 117.586 203.735 118.566C204.092 119.531 204.658 120.013 205.433 120.013C206.921 120.013 207.666 118.053 207.666 114.132C207.666 110.242 206.921 108.297 205.433 108.297C204.658 108.297 204.092 108.779 203.735 109.744C203.394 110.693 203.223 112.156 203.223 114.132ZM213.527 114.085C213.527 117.648 212.837 120.332 211.457 122.137C210.077 123.926 208.053 124.821 205.386 124.821C202.828 124.821 200.851 123.903 199.456 122.067C198.06 120.215 197.362 117.555 197.362 114.085C197.362 106.974 200.037 103.419 205.386 103.419C208.007 103.419 210.015 104.345 211.41 106.196C212.821 108.032 213.527 110.662 213.527 114.085Z"
+                fill="white"
+              />
+              <path
+                d="M86.9266 157.237H87.8516C88.7162 157.237 89.3631 157.066 89.7923 156.725C90.2216 156.378 90.4362 155.876 90.4362 155.218C90.4362 154.554 90.2548 154.064 89.8921 153.747C89.5354 153.431 88.9731 153.272 88.2053 153.272H86.9266V157.237ZM93.2748 155.117C93.2748 156.555 92.8274 157.654 91.9326 158.415C91.0438 159.176 89.7772 159.557 88.1327 159.557H86.9266V164.307H84.1152V150.952H88.3504C89.9586 150.952 91.1799 151.302 92.0142 152.003C92.8546 152.697 93.2748 153.735 93.2748 155.117Z"
+                fill="white"
+              />
+              <path d="M95.7778 164.307V150.952H98.5891V161.968H103.967V164.307H95.7778Z" fill="white" />
+              <path
+                d="M114.396 164.307L113.435 161.128H108.601L107.64 164.307H104.611L109.29 150.897H112.727L117.425 164.307H114.396ZM112.764 158.753C111.875 155.873 111.373 154.244 111.258 153.866C111.149 153.489 111.071 153.19 111.022 152.971C110.823 153.75 110.252 155.678 109.308 158.753H112.764Z"
+                fill="white"
+              />
+              <path d="M124.218 164.307H121.406V153.309H117.806V150.952H127.818V153.309H124.218V164.307Z" fill="white" />
+              <path d="M132.624 164.307H129.858V150.952H137.458V153.272H132.624V156.716H137.123V159.027H132.624V164.307Z" fill="white" />
+              <path
+                d="M152.086 157.611C152.086 159.822 151.542 161.521 150.454 162.708C149.366 163.896 147.806 164.489 145.774 164.489C143.743 164.489 142.183 163.896 141.095 162.708C140.006 161.521 139.462 159.816 139.462 157.593C139.462 155.37 140.006 153.674 141.095 152.505C142.189 151.33 143.755 150.742 145.792 150.742C147.83 150.742 149.387 151.333 150.463 152.514C151.545 153.696 152.086 155.395 152.086 157.611ZM142.41 157.611C142.41 159.103 142.691 160.227 143.253 160.982C143.815 161.737 144.656 162.114 145.774 162.114C148.017 162.114 149.139 160.613 149.139 157.611C149.139 154.603 148.023 153.099 145.792 153.099C144.674 153.099 143.831 153.479 143.262 154.241C142.694 154.996 142.41 156.119 142.41 157.611Z"
+                fill="white"
+              />
+              <path
+                d="M157.645 156.88H158.552C159.441 156.88 160.097 156.731 160.52 156.433C160.943 156.134 161.155 155.666 161.155 155.026C161.155 154.393 160.937 153.942 160.502 153.674C160.073 153.406 159.405 153.272 158.498 153.272H157.645V156.88ZM157.645 159.182V164.307H154.834V150.952H158.697C160.499 150.952 161.832 151.284 162.697 151.948C163.561 152.606 163.994 153.607 163.994 154.953C163.994 155.739 163.779 156.439 163.35 157.054C162.92 157.663 162.313 158.141 161.527 158.488C163.522 161.49 164.822 163.43 165.426 164.307H162.307L159.142 159.182H157.645Z"
+                fill="white"
+              />
+              <path
+                d="M172.709 164.307L169.516 153.83H169.435C169.55 155.961 169.607 157.383 169.607 158.095V164.307H167.095V150.952H170.922L174.06 161.164H174.114L177.443 150.952H181.27V164.307H178.649V157.986C178.649 157.687 178.652 157.343 178.658 156.953C178.67 156.564 178.712 155.529 178.785 153.848H178.703L175.284 164.307H172.709Z"
+                fill="white"
+              />
+              <path
+                d="M192.252 156.88H193.159C194.048 156.88 194.704 156.731 195.127 156.433C195.55 156.134 195.762 155.666 195.762 155.026C195.762 154.393 195.544 153.942 195.109 153.674C194.679 153.406 194.011 153.272 193.105 153.272H192.252V156.88ZM192.252 159.182V164.307H189.441V150.952H193.304C195.106 150.952 196.439 151.284 197.303 151.948C198.168 152.606 198.6 153.607 198.6 154.953C198.6 155.739 198.386 156.439 197.956 157.054C197.527 157.663 196.919 158.141 196.134 158.488C198.129 161.49 199.429 163.43 200.033 164.307H196.913L193.748 159.182H192.252Z"
+                fill="white"
+              />
+              <path d="M209.338 164.307H201.702V150.952H209.338V153.272H204.513V156.204H209.002V158.525H204.513V161.968H209.338V164.307Z" fill="white" />
+              <path
+                d="M220.229 164.307L219.268 161.128H214.434L213.473 164.307H210.444L215.124 150.897H218.561L223.258 164.307H220.229ZM218.597 158.753C217.708 155.873 217.206 154.244 217.092 153.866C216.983 153.489 216.904 153.19 216.856 152.971C216.656 153.75 216.085 155.678 215.142 158.753H218.597Z"
+                fill="white"
+              />
+              <path
+                d="M235.937 157.502C235.937 159.7 235.314 161.384 234.068 162.553C232.829 163.722 231.036 164.307 228.691 164.307H224.936V150.952H229.099C231.263 150.952 232.944 151.528 234.141 152.679C235.338 153.83 235.937 155.437 235.937 157.502ZM233.016 157.575C233.016 154.706 231.759 153.272 229.244 153.272H227.747V161.968H228.954C231.662 161.968 233.016 160.504 233.016 157.575Z"
+                fill="white"
+              />
+              <path
+                d="M242.811 156.451L245.577 150.952H248.606L244.207 159.109V164.307H241.414V159.201L237.016 150.952H240.063L242.811 156.451Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="absolute left-0 top-0 h-full w-full overflow-hidden">
+            <img class="scale-150 translate-y-36" src="./assets/images/bg-s-slider.webp" alt="" />
+          </div>
+        </section>
     <!-- silder And Navbar -->
     <section class="hidden lg:block container mt-16 md:hidden">
+      
       <div class="pb-20">
         <div class="h-[706px] bg-white bg-opacity-10 rounded-[45px] backdrop-blur-md py-[18px] px-[26px]">
           <!-- Navbar -->
@@ -63,50 +215,14 @@
         </div>
       </div>
     </section>
-          <!-- MOBILE RESPONSIVE-->
-          <div class="lg:hidden relative ">
-                                    <!-- SIDEBAR -->
-                                    <div class="sticky z-[100]">
-                                   <div class="flex flex-col">
-                                      <div class="w3-sidebar w3-bar-block w3-border-right h-full w-[180px] bg-white fixed z-10 overflow-auto " style="display:none" id="mySidebar">
-                                        <button onclick="w3_close()" class="w3-bar-item w3-large inline-block overflow-hidden align-middle text-center">Close &times;</button>
-                                        <a href="#" class="w3-bar-item w3-button text-black">Link 1</a>
-                                        <a href="#" class="w3-bar-item w3-button text-black">Link 2</a>
-                                        <a href="#" class="w3-bar-item w3-button text-black flex-c">Link 3</a>
-                                      </div>
-                                    </div>
-                                    <div class="w3-teal">
-                                      <button class="w3-button w3-teal w3-xlarge text-white text-5xl" onclick="w3_open()">☰</button>                                    
-                                    </div>
-                                  </div>
-                                  
-            <img src="./assets/images/Rectangle 713.png" alt="" class="-mt-12"/>
 
-            <div class="mx-14 absolute top-[180px]">
-              
-              <img src="./assets/images/3_white-_3_-1.webp" class="mb-9" />
-              <p class="text-white text-center mb-10">
-                Lidoma Vision Esports, a UAE-based International Gaming & Esports
-                Solutions Company established in 2020, aims to empower the global
-                gaming community & ecosystem. Our passionate team of gaming
-                enthusiasts leads us on an exciting journey in the worldwide gaming
-                landscape. At Lidoma, we Inspire the World to Play, Earn, and Enjoy.
-                We unite communities, orchestrate tournaments & leagues, and
-                broadcast online/offline events to create a robust platform that
-                offers extensive services to our partners & community.
-              </p>
-              <img src="./assets/images/Group 692.png" />
-            </div>
-</div>
 
     <div class="container">
       <!-- -----------SOCIAL MEDIA------------ -->
       <!-- LINE SECTION -->
       <div class="mt-28 max-md:hidden">
-        <div class="flex items-center max-md:hidden">
-          <img src="./assets/images/Line 162.png" width="460px" height="6px" />
-          <p class="text-white font-bold text-[32px] px-[15px]">SOCIAL MEDIAS</p>
-          <img src="./assets/images/Line 163.png" width="480px" height="6px" />
+        <div class="divider before:flex-1 after:flex-1 after:before\:content-none font-bold text-white text-4xl sm:text-[64px] flex items-center after:sm:p-[3px] after:p-[1px] before:sm:p-[3px] before:p-[1px] m-[5px]">
+          <p class="px-4 lg:text-[47px]">SOCIAL MEDIAS</p>
         </div>
         <div class="flex mt-16 gap-16">
           <div class="tabs flex flex-col">
@@ -165,7 +281,9 @@
       </div>
        <!-- MOBILE RESPONSIVE -->
        <div class="lg:hidden mt-16">
-        <img src="./assets/images/Group 885.png" />
+        <div class="divider before:flex-1 after:flex-1 after:before\:content-none font-bold text-white text-4xl sm:text-[64px] flex items-center after:sm:p-[3px] after:p-[1px] before:sm:p-[3px] before:p-[1px] m-[5px]">
+          <p class="px-4 ">SOCIAL MEDIAS</p>
+        </div>
         <div>
           <div class="swiper mySwiper-2">
             <div class="swiper-wrapper mt-16">
@@ -302,36 +420,36 @@
           </div>
         </div>
       </div>
-      <!-- TOURNAMENTS -->
-      <div class="mt-28 max-md:hidden">
-        <div class="flex items-center justify-center max-md:hidden">
-          <img src="./assets/images/Line 162.png" width="475px" height="6px" />
-          <p class="text-white font-bold text-[32px] px-[15px]">TOURNAMENTS</p>
-          <img src="./assets/images/Line 163.png" width="480px" height="6px" />
-        </div>
-        <div class="mt-16">
-          <img src="./assets/images/Group 763.png" />
-          <img src="./assets/images/Group 763.png" class="mt-12" />
-        </div>
-      </div>
-            <!-- MOBILE RESPONSIVE -->
-            <div class="lg:hidden mt-16">
-              <img src="./assets/images/Group 886.png" alt="" />
-              <div class="mx-3 mt-16">
-                <img src="./assets/images/Group 892.png" class="mb-7">
-                <img src="./assets/images/Group 892.png">
-              </div>
-            </div>
-      <!-- TRUSTED BY -->
-      <div>
-        <div class="flex items-center mt-28 max-md:hidden">
-          <img src="./assets/images/Line 162.png" width="487px" height="6px" />
-          <p class="text-white font-bold text-[32px] px-[15px]">TRUSTED BY</p>
-          <img src="./assets/images/Line 163.png" width="480px" height="6px" />
-        </div>
 
-        <!-- MOBILE RESPONSIVE -->
-        <img src="./assets/images/Group 894.png" alt="" class="mt-16 mb-16 lg:hidden">
+          <!-- TOURNAMENTS -->
+    <section class="container mt-28">
+      <div class="divider before:flex-1 after:flex-1 after:before\:content-none font-bold text-white text-4xl sm:text-[64px] flex items-center after:sm:p-[3px] after:p-[1px] before:sm:p-[3px] before:p-[1px] m-[5px]">
+        <p class="px-4 lg:text-[47px]">TOURNAMENTS</p>
+      </div>
+      <div class="mt-16 flex flex-col gap-16">
+        <a class="flex justify-center" href="#">
+          <picture>
+            <source class="w-full" media="(min-width:465px)" srcset="./assets/images/bg-m-2.webp" />
+            <img src="./assets/images/bg-s-1.webp" />
+          </picture>
+        </a>
+        <a class="flex justify-center" href="#">
+          <picture>
+            <source class="w-full" media="(min-width:465px)" srcset="./assets/images/bg-m-1.webp" />
+            <img src="./assets/images/bg-s-1.webp" />
+          </picture>
+        </a>
+      </div>
+    </section>
+
+     <!-- TRUSTED BY -->
+    <section class="container mt-28">
+      <div class="divider before:flex-1 after:flex-1 after:before\:content-none font-bold text-white text-4xl sm:text-[64px] flex items-center after:sm:p-[3px] after:p-[1px] before:sm:p-[3px] before:p-[1px] m-[5px]">
+        <p class="px-4 lg:text-[47px]">TRUSTED BY</p>
+      </div>
+    </section>
+
+
       <!-- FOOTER -->
       <footer class="container mt-9 h-[280px] relative">
         <div class="flex flex-col items-center justify-center pt-9 pb-8 z-10 absolute inset-0">
@@ -347,7 +465,7 @@
             <p class="font-bold text-white">@2023 LIDOMA. All rights reserved</p>
           </div>
           <span class="h-[1px] lg:w-[1180px] max-md:w-[380px] border-b divide-solid border-white mt-2"></span>
-          <div class="text-xs pt-6">
+          <div class="text-xs pt-6 max-md:text-[10px]">
             <a href="#" class="text-white border-r-[3px] solid border-white pr-3">ABOUT</a>
             <a href="#" class="text-white border-r-[3px] solid border-white px-3">LEGAL</a>
             <a href="#" class="text-white border-r-[3px] solid border-white px-3">TERMS</a>
@@ -363,6 +481,7 @@
 
     <script src="./assets/js/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
     <script src="./assets/js/raw.js"></script>
+    <script src="./assets/js/alpine.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         navigation: {

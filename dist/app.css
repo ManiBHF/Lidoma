@@ -1,4 +1,5 @@
 @tailwind base;
+[x-cloak] { display: none; }
 .tab-content div {
   display: none;
 }
@@ -15,5 +16,13 @@
   width: 18px;
   height: 18px;
 }
+
+.divider::before {
+  background: linear-gradient(to left,white, transparent);
+}
+.divider::after{
+  background: linear-gradient(to left, transparent, white);
+}
+
 @tailwind components;
 @tailwind utilities;
