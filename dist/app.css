@@ -24,5 +24,14 @@
   background: linear-gradient(to left, transparent, white);
 }
 
+.trust-n:after{
+  font-size: 30px;
+  content: 'next';
+}
+.trust-p:after{
+  font-size: 30px;
+  content: 'prev';
+}
+
 @tailwind components;
 @tailwind utilities;

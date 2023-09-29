@@ -249,28 +249,28 @@
           </div>
           <div class="tab-content">
             <div class="active block">
-              <a href="#">
+              <a href="#" class="animate-pulse">
                 <picture>
                   <img src="./assets/images/social-blue.webp" alt="youtube" />
                 </picture>
               </a>
-              <a href="#">
+              <a href="#" class="animate-pulse">
                 <img src="./assets/images/social-insta.webp" alt="discord" />
               </a>
-              <a href="#">
+              <a href="#" class="animate-pulse">
                 <img src="./assets/images/social-vector.webp" alt="" />
               </a>
-              <a href="#">
+              <a href="#" class="animate-pulse">
                 <img src="./assets/images/social-youtube.webp" alt="instagram" />
               </a>
             </div>     
             <div class=" block">
-              <a href="#">
+              <a href="#" class="animate-pulse">
                 <picture>
                   <img src="./assets/images/social-blue.webp" alt="youtube" />
                 </picture>
               </a>
-              <a href="#">
+              <a href="#" class="animate-pulse">
                 <img src="./assets/images/social-insta.webp" alt="discord" />
               </a>
 
@@ -443,9 +443,28 @@
     </section>
 
      <!-- TRUSTED BY -->
-    <section class="container mt-28">
+    <section class="container mt-28 mb-28">
       <div class="divider before:flex-1 after:flex-1 after:before\:content-none font-bold text-white text-4xl sm:text-[64px] flex items-center after:sm:p-[3px] after:p-[1px] before:sm:p-[3px] before:p-[1px] m-[5px]">
         <p class="px-4 lg:text-[47px]">TRUSTED BY</p>
+      </div>
+      <div class="flex justify-center items-center mt-20">
+   
+        <div class="swiper mySwiper-3 ">
+          <div class="swiper-wrapper items-center lg:pl-[70px] max-md:pl-32">
+            <div class="swiper-slide "><img src="./assets/images/tencent.png" alt="tencent" width="135px" height="80px"></div>
+            <div class="swiper-slide "><img src="./assets/images/ubisoft.png" alt="ubisoft" width="135px" height="80px"></div>
+            <div class="swiper-slide "><img src="./assets/images/Valve_logo.png" alt="valve" width="135px" height="80px"></div>
+            <div class="swiper-slide "><img src="./assets/images/asus.png" alt="asus" width="135px" height="80px"></div>
+            <div class="swiper-slide "><img src="./assets/images/elgato.png" alt="elgato" width="135px" height="80px"></div>
+            <div class="swiper-slide "><img src="./assets/images/LV_LOGO_Nov8-04-e1594277499436.png" alt="link viva" width="135px" height="80px"></div>
+            <div class="swiper-slide "><img src="./assets/images/gaminturkey.png" alt="gaming turkey" width="135px" height="80px"></div>
+            <div class="swiper-slide "><img src="./assets/images/krafton.png" alt="krafton" width="135px" height="80px"></div>
+            <div class="swiper-slide "><img src="./assets/images/new state.png" alt="krafton" width="135px" height="80px"></div>
+            <div class="swiper-slide "><img src="./assets/images/loco.png" alt="loco" width="135px" height="80px"></div>
+          </div>
+          <div class="swiper-button-next rounded-full trust-n  w-12 h-12  bg-white text-black"></div>
+          <div class="swiper-button-prev rounded-full trust-p  w-12 h-12  bg-white text-black"></div>
+        </div>
       </div>
     </section>
 
@@ -502,5 +521,30 @@
             },
           });
         </script>
+  <script>
+    var swiper = new Swiper(".mySwiper-3", {
+      
+      slidesPerView: 4,
+      breakpoints: {
+
+        0: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 4,
+
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    });
+  </script>
+
   </body>
 </html>
