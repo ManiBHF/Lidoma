@@ -11,7 +11,7 @@
         <!-- mobile -->
         <section class="relative sm:hidden flex flex-col z-20 mx-auto h-[862px] justify-center" x-data="{open: false}">
           <nav
-          class="absolute inset-0 z-50 transform lg:transform-none lg:opacity-100 duration-200 lg:relative text-white h-[630px] w-[391px] bg-black translate-x-0 mr-4 rounded-br-[50px]"
+          class="absolute inset-0 z-50 transform lg:transform-none w-full lg:opacity-100 duration-200 lg:relative text-white h-[630px] w-[391px] bg-black translate-x-0 mr-4 rounded-br-[50px]"
           :class="{'translate-x-0 ease-in opacity-100':open === true, '-translate-x-full ease-out opacity-0': open === false}"
         >
               <button class="absolute top-8 right-6" @click="open = false">
